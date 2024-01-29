@@ -4,7 +4,7 @@ lst=[]
 while True:
     n=int(input())
     if n>=30 and len(lst)==0:
-        continue
+        break
     if n>=30 and len(lst)!=0:
         print("%.2f"%(sum(lst)/(i-1)))
         break
