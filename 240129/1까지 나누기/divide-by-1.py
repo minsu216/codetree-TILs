@@ -3,7 +3,7 @@ count=0
 re=0
 i=1
 while True:
-    if n==0:
+    if n<=1:
         break
     else:
         re=n//i # 50
