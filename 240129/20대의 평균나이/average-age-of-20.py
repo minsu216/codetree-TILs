@@ -1,10 +1,13 @@
 i=1
 result=0
+lst=[]
 while True:
     n=int(input())
-    if n>=30:
-        print("%.2f"%(result/(i-1)))
+    if n>=30 and len(lst)==0:
+        continue
+    if n>=30 and len(lst)!=0:
+        print("%.2f"%(sum(lst)/(i-1)))
         break
     else:
-        result+=n
+        lst.append(n)
         i+=1
